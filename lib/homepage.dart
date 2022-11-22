@@ -6,9 +6,7 @@ import 'package:flutter/material.dart';
 import 'login.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage(
-      {Key? key,})
-      : super(key: key);
+  const HomePage({Key? key,}): super(key: key);
 
 
   @override
@@ -37,7 +35,7 @@ class _HomePageState extends State<HomePage> {
                     File(widget.imagePath),
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 10
                   ),
                   Text(widget.namepath,style: TextStyle(fontSize: 20),),
                   Text(widget.dobpath),
@@ -78,7 +76,7 @@ class _UserState extends State<User> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Image : User Image "),
+              Text("Image : User Img"),
               Text("Name : User Name "),
               Text("Date of Birth : User DOB "),
             ],
