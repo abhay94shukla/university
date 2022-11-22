@@ -7,14 +7,9 @@ import 'login.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage(
-      {Key? key,
-      required this.imagePath,
-      required this.namepath,
-      required this.dobpath})
+      {Key? key,})
       : super(key: key);
-  final String imagePath;
-  final String namepath;
-  final String dobpath;
+
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -50,14 +45,7 @@ class _HomePageState extends State<HomePage> {
               ),
               ListTile(
                 title: Text("Logout"),
-                onTap: () {
-                  Navigator.pushAndRemoveUntil(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Login(),
-                      ),
-                      (Route<dynamic> route) => false);
-                },
+                onTap: () {},
               ),
             ],
           ),

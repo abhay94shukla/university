@@ -26,7 +26,7 @@ class _SignInState extends State<SignIn> {
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(12),),),
           ),
           OutlinedButton(onPressed: (){
-            Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>HomePage(imagePath: imagePath, namepath: namepath, dobpath: dobpath)), (Route <dynamic> route) => false);
+            Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>HomePage(),), (Route <dynamic> route) => false);
           }, child: Text("Continue "),),
         ],
       ),
